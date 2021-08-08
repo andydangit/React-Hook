@@ -3,9 +3,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <div> test </div> 
-    </div>
+<>
+    <button> - </button>
+    <span> 0 </span>
+    <button> + </button>
+</>
   );
 }
 
