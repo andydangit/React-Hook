@@ -1,36 +1,22 @@
-import { useState } from 'react';
+///////// UseEffect  
 
+import { useState } from 'react';
 import './App.css';
 
-function App() {
 
-  // const [count, setCount] = useState(() => {
-  //   console.log("run function")
-  //   return 4
-  // });
+export default function App() {
+  const [resourceType, SetResourceType] = useState ('posts')
 
-  const [count, setCount] = useState (4);
-  const [theme, setTheme] = useState ('blue');
-
-  function decrementCount () {
-    setCount ( prevCount => prevCount - 1)
-    setTheme('blue')
-  };
-
-  function incrementCount () {
-    setCount ( prevCount => prevCount + 1)
-    setTheme ( 'red')
-  };
 
 
   return (
 <>
-    <button onClick = {decrementCount}> - </button>
-    <span> {count} </span>
-    <span> {theme} </span>
-    <button onClick = {incrementCount} > + </button>
+<div> 
+  <button onClick={() => SetResourceType('posts')} > Posts </button>
+  <button onClick={() => SetResourceType('users')} > Users </button>
+  <button onClick={() => SetResourceType('comments')} > Comments </button>
+    </div> 
+    <h1> {resourceType} </h1>
 </>
-  );
+  )
 }
-
-export default App;
