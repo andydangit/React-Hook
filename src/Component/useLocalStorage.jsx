@@ -1,7 +1,17 @@
 import { useState } from "react";
 
-export default function useLocalStorage() {
-const [value, setValue] =useState()
+function getSavedValue(key, initialValue){
+ const savedValue =   JSON.parse( localStorage.getItem(key))
+ if(savedValue) return savedValue
+
+ if (initialValue instanceof Function) return initialValue()
+ return initialValue
+}
+
+export default function useLocalStorage(key, initialValue) {
+const [value, setValue] =useState(() => {
+    return getSavedValue(key, initialValue)
+})
 
 return [value,setValue]
 }

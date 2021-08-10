@@ -5,7 +5,7 @@ import useLocalStorage from './Component/useLocalStorage'
 
 export default function App() {
 
-  const[name, setName] = useLocalStorage('')
+  const[name, setName] = useLocalStorage('name', '')
 
   return (
           <input 
