@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
+import useLocalStorage from './Component/useLocalStorage'
 
 
 
 export default function App() {
 
-  const[name, setName] = useState('')
+  const[name, setName] = useLocalStorage('')
 
   return (
           <input 
