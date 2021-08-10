@@ -14,10 +14,12 @@ function App() {
 
   function decrementCount () {
     setCount ( prevCount => prevCount - 1)
+    setTheme('blue')
   };
 
   function incrementCount () {
     setCount ( prevCount => prevCount + 1)
+    setTheme ( 'red')
   };
 
 
