@@ -4,14 +4,15 @@ const App = () => {
 
 const [count, setCount] = useState(0);
 
-const increment = () => {
-  setCount (count + 1)
-}
+// const increment = () => {
+//   setCount (count + 1)
+// }
 
   return (
     <div className="App">
       {count}
-      <button onClick = {increment}> Increment </button>
+      <button onClick = {() => setCount(count+1)}> Increment </button>
+      <button onClick={() => setCount(count -1)}>Decrement</button> 
     </div>
   );
 }
