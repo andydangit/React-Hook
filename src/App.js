@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
 
-function App() {
+const App = () => {
+
+
+
   return (
     <div className="App">
-      <h2> useState & useEffect </h2>
-      <br />
-      <b> Simply Explained! </b>
+
     </div>
   );
 }
