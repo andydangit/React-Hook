@@ -3,11 +3,11 @@ import React, { useState, useEffect} from "react";
 const App = () => {
 
 const [count, setCount] = useState(0);
+const [secondCount, setSecondCount] = useState (1);
 
 useEffect(() => {
-  
-  // setCount ( count + 1);  // this will be an infinity loop 
-})
+  setCount ( count + 1); 
+}, [secondCount]);
 
 // const increment = () => {
 //   setCount (count + 1)
@@ -15,7 +15,11 @@ useEffect(() => {
 
   return (
     <div className="App">
-      {count}
+      {count} - {secondCount}
+      <button onClick = { () => setSecondCount (secondCount + 1 )}> Increment Second</button>
+
+
+      
       {/* <button onClick = {() => setCount(count+1)}> Increment </button>
       <button onClick={() => setCount(count -1)}>Decrement</button>  */}
     </div>
