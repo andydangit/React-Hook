@@ -1,17 +1,13 @@
-import React, {useState} from 'react'
-import useLocalStorage from './Component/useLocalStorage'
+import React from "react";
 
-
-
-export default function App() {
-
-  const[name, setName] = useLocalStorage('name', '')
-
+function App() {
   return (
-          <input 
-      type="text"
-      value={name}
-      onChange={e => setName (e.target.value) }
-    />
-  )
+    <div className="App">
+      <h2> useState & useEffect </h2>
+      <br />
+      <b> Simply Explained! </b>
+    </div>
+  );
 }
+
+export default App;
