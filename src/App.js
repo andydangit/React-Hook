@@ -4,6 +4,11 @@ const App = () => {
 
 const [count, setCount] = useState(0);
 
+useEffect(() => {
+  
+  // setCount ( count + 1);  // this will be an infinity loop 
+})
+
 // const increment = () => {
 //   setCount (count + 1)
 // }
@@ -11,8 +16,8 @@ const [count, setCount] = useState(0);
   return (
     <div className="App">
       {count}
-      <button onClick = {() => setCount(count+1)}> Increment </button>
-      <button onClick={() => setCount(count -1)}>Decrement</button> 
+      {/* <button onClick = {() => setCount(count+1)}> Increment </button>
+      <button onClick={() => setCount(count -1)}>Decrement</button>  */}
     </div>
   );
 }
