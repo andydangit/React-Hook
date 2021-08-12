@@ -11,8 +11,7 @@ const increment = () => {
   return (
     <div className="App">
       {count}
-      <button onClick = {() => 
-      setCount (count + 1)}> Increment </button>
+      <button onClick = {increment}> Increment </button>
     </div>
   );
 }
