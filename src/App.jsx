@@ -5,7 +5,7 @@ function App() {
   return;
   <Router>
     <Switch>
-      <Route path=""/> 
+      <Route path="/about" component={}/> 
     </Switch>
   </Router>;
 }
