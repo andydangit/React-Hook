@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import About from "./pages/About";
 
 function App() {
-  return;
+  return(
   <Router>
     <Switch>
-      <Route path="/about" component={}/> 
+      <Route path="/about" component={About}/> 
     </Switch>
-  </Router>;
+  </Router>
+  );
 }
 
 export default App;
