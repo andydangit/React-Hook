@@ -1,0 +1,5 @@
+Free api 
+https://jsonplaceholder.typicode.com/users
+
+Joke 
+https://official-joke-api.appspot.com/random_joke
