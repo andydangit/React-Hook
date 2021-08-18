@@ -1,9 +1,14 @@
 import React from 'react'
 
-function JokeCard() {
+function JokeCard(props) {
     return (
         <div>
-            this is the Card
+            {props.joke.setup}
+            <div> 
+            {props.joke.punchline}
+            </div> 
+            <br/>
+
         </div>
     )
 }
