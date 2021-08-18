@@ -1,11 +1,11 @@
 import React from 'react'
 
-function JokeList() {
+function JokeCard() {
     return (
         <div>
-            
+            this is the Card
         </div>
     )
 }
 
-export default JokeList
+export default JokeCard
