@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div>
-      <button onClick={getJoke}> get joke </button>
+      <button onClick={getJoke}> get jokes </button>
       <br/>
       {joke}
     </div>
@@ -39,4 +39,3 @@ function App() {
 }
 
 export default App
-
