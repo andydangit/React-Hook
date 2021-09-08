@@ -1,41 +1,29 @@
-import React, {useState} from 'react'
-// import {BrowserRouter as Router, Switch, Route,  Link, } from 'react-router-dom'
-import Axios from 'axios';
-
-
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import JokeList from "./Component/JokeList";
 
 function App() {
-
-  // const url = `https://official-joke-api.appspot.com/random_joke`;
-
-  const [joke, setJoke] = useState("");
-
-  // Axios
-  // const getJoke = () => {
-  //   Axios.get("https://official-joke-api.appspot.com/random_joke").then(
-  //     (response) => {
-  //     setJoke(response.data.setup + ".... " + response.data.punchline)
-      
-  //     }
-  //   );
-  // }
-
-
-  // using fetch
-  const getJoke = () => {
-    fetch("https://official-joke-api.appspot.com/random_joke").then(
-      (response) => response.json()).then((data) => {
-        setJoke(data.setup + ".... " + data.punchline)
-      });
-  }
-
   return (
     <div>
+<<<<<<< HEAD
       <button onClick={getJoke}> get jokes </button>
       <br/>
       {joke}
+=======
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <JokeList />
+          </Route>
+        </Switch>
+      </Router>
+>>>>>>> 5317c8e660101af9f878d8e0315392b729a5ede1
     </div>
-  )
+  );
 }
 
+<<<<<<< HEAD
 export default App
+=======
+export default App;
+>>>>>>> 5317c8e660101af9f878d8e0315392b729a5ede1
